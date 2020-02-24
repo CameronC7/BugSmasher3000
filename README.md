@@ -9,9 +9,11 @@
 <p>My application will have a theoretical company using this application, including fake employee names with different account permissions, depending on the title of the employee.  The employees will need to log-in to use the application.  “Users” of this company’s product will also be able to submit bugs they found while using the product. The user’s report will be screened and if the problem is valid, will be added to the bug tracking application.</p>
 <h1 id="database-diagrams">Database Diagrams</h1>
 <p>The database will be written and maintained in SQL Server and will be hosted on Microsoft Azure.<br>
-Here is an ERD Diagram of the database:</p>
+Here is an ERD Diagram of the database:<br>
+<img src="https://photos.google.com/album/AF1QipPvqByRRph-u8Ft5l4P8gMr60lqkKeUVkhbQZxf/photo/AF1QipN7ZKcBr4-5dIleqM-rZot59sfHIoWdo_bfHvNF" alt="ERD Diagram"></p>
 <h1 id="wire-framesdraft">Wire-frames(DRAFT)</h1>
-<p>Here are some wire frame drafts of the application.</p>
-![Login Wireframe](https://github.com/CameronC7/BugSmasher3000/blob/master/Login%20Wireframe.png "Login Wireframe")
+<p>Here are some wire frame drafts of the application.<br>
+<img src="https://photos.google.com/album/AF1QipPvqByRRph-u8Ft5l4P8gMr60lqkKeUVkhbQZxf/photo/AF1QipPWlY7NAtSDNzya21YdWO--BmfeFl8rLy3BR0n0" alt="Login Wireframe"><br>
+<img src="https://photos.google.com/album/AF1QipPvqByRRph-u8Ft5l4P8gMr60lqkKeUVkhbQZxf/photo/AF1QipP7_mdLP2qwDecCq3l7WoxFJNfNxPmJr-tFh2Kw" alt="Ticket Example"></p>
 <pre><code></code></pre>
 
