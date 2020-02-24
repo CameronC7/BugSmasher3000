@@ -12,6 +12,6 @@
 Here is an ERD Diagram of the database:</p>
 <h1 id="wire-framesdraft">Wire-frames(DRAFT)</h1>
 <p>Here are some wire frame drafts of the application.</p>
-![Login Wireframe](https://github.com/CameronC7/BugSmasher3000/blob/master/Login%20Wireframe.png "Login Wireframe")
+![Login Wireframe](/Login%20Wireframe.png "Login Wireframe")
 <pre><code></code></pre>
 
