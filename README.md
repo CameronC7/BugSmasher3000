@@ -13,7 +13,9 @@ Here is an ERD Diagram of the database:<br>
 <img src="https://i.ibb.co/QvgMnFx/ERD-2-0.jpg" alt="ERD Diagram"></p>
 <h1 id="wire-framesdraft">Wire-frames(DRAFT)</h1>
 <p>Here are some wire frame drafts of the application.<br>
+This is the login page:<br>
 <img src="https://i.ibb.co/DbDgtQV/Login-Wireframe.png" alt="Login Wireframe"><br>
+This is an example of what it will look like when looking at a bug ticket:<br>
 <img src="https://i.ibb.co/n16bRq6/Ticket-Wireframe.png" alt="Ticket Example"></p>
 <pre><code></code></pre>
 
