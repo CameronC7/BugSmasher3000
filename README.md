@@ -7,8 +7,8 @@
 <h2 id="table-of-contents">Table of Contents</h2>
 <ol>
 <li><a href="#Concept-Description">Concept Description</a></li>
-<li>Database Diagrams</li>
-<li>Wire-frames</li>
+<li><a href="#Database-Diagrams">Database Diagrams</a></li>
+<li><a href="#Wire-frames">Wire-frames</a></li>
 <li><a href="#Requirements-and-Use-Cases">Requirements and Use Cases</a></li>
 </ol>
 <h1 id="concept-description">Concept Description</h1>
