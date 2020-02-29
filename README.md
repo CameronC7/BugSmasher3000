@@ -8,7 +8,7 @@
 <ol>
 <li><a href="#Concept-Description">Concept Description</a></li>
 <li><a href="#Database-Diagrams">Database Diagrams</a></li>
-<li><a href="#Wire-frames(DRAFT)">Wire-frames</a></li>
+<li><a href="#Wire-Frames">Wire Frames</a></li>
 <li><a href="#Requirements-and-Use-Cases">Requirements and Use Cases</a></li>
 </ol>
 <h1 id="concept-description">Concept Description</h1>
@@ -18,7 +18,7 @@
 <p>The database will be written and maintained in SQL Server and will be hosted on Microsoft Azure.</p>
 <p>Here is an ERD Diagram of the database:<br>
 <img src="https://i.ibb.co/QvgMnFx/ERD-2-0.jpg" alt="ERD Diagram"></p>
-<h1 id="wire-framesdraft">Wire-frames(DRAFT)</h1>
+<h1 id="wire-frames">Wire Frames</h1>
 <p>Here are some wire frame drafts of the application.<br>
 This is the login page:<br>
 <img src="https://i.ibb.co/DbDgtQV/Login-Wireframe.png" alt="Login Wireframe"></p>
