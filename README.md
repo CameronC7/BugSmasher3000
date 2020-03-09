@@ -84,5 +84,96 @@ This is the login page:<br>
 </ul>
 </li>
 </ul>
-<pre><code></code></pre>
+<h2 id="test-table">Test Table</h2>
+
+<table>
+<thead>
+<tr>
+<th align="left">Test ID</th>
+<th align="right">Requirement ID</th>
+<th align="center">Test Procedure</th>
+<th align="right">Current Status</th>
+<th align="right">Time Stamp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="right">1.1.0</td>
+<td align="center">Test log in with correct email and password</td>
+<td align="right">Not Tested</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="right">1.1.1</td>
+<td align="center">Test log in with incorrect email and password</td>
+<td align="right">Not Tested</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="right">1.1.2</td>
+<td align="center">Make sure password reset is sent to user’s email upon request</td>
+<td align="right">Not Tested</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="right">2.1.0</td>
+<td align="center">Log in with admin account and ensure profile has access to everything</td>
+<td align="right">Not Tested</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="right">2.2.0</td>
+<td align="center">Log in with supervisor account and ensure profile has access to track all tickets</td>
+<td align="right">Not Tested</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="right">2.3.0</td>
+<td align="center">Log in with employee account and ensure profile only has access to their tickets</td>
+<td align="right">Not Tested</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">7</td>
+<td align="right">3.1.0</td>
+<td align="center">While logged into a supervisor profile, assign a test ticket to an employee</td>
+<td align="right">Not Tested</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">8</td>
+<td align="right">3.2.0</td>
+<td align="center">While logged into an employee profile, write comments on active ticket</td>
+<td align="right">Not Tested</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">9</td>
+<td align="right">3.2.1</td>
+<td align="center">Verify all active tickets are on “The Board” under the assigned employee’s name</td>
+<td align="right">Not Tested</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">10</td>
+<td align="right">3.3.0</td>
+<td align="center">Complete test tickets and verify they are stored in the historical section</td>
+<td align="right">Not Tested</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td align="left">11</td>
+<td align="right">3.3.1</td>
+<td align="center">Verify search bar returns correct historical ticket by title</td>
+<td align="right">Not Tested</td>
+<td align="right"></td>
+</tr>
+</tbody>
+</table><pre><code></code></pre>
 
