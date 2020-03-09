@@ -10,7 +10,7 @@
 <li><a href="#Database-Diagrams">Database Diagrams</a></li>
 <li><a href="#Wire-Frames">Wire Frames</a></li>
 <li><a href="#Requirements-and-Use-Cases">Requirements and Use Cases</a></li>
-<li><a href="Test-Table">Test Table</a></li>
+<li><a href="#Test-Table">Test Table</a></li>
 </ol>
 <h1 id="concept-description">Concept Description</h1>
 <p>This web application I am building will help keep track of bugs, or errors, in software applications.  The goal is to build this great software and then it will help me when I build more projects in the future by keeping track of all bugs that show up and reduce the time needed to fix those problems.</p>
