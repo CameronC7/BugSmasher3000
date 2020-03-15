@@ -11,6 +11,7 @@
 <li><a href="#Wire-Frames">Wire Frames</a></li>
 <li><a href="#Requirements-and-Use-Cases">Requirements and Use Cases</a></li>
 <li><a href="#Test-Table">Test Table</a></li>
+<li><a href="#Prototype">Prototypes</a></li>
 </ol>
 <h1 id="concept-description">Concept Description</h1>
 <p>This web application I am building will help keep track of bugs, or errors, in software applications.  The goal is to build this great software and then it will help me when I build more projects in the future by keeping track of all bugs that show up and reduce the time needed to fix those problems.</p>
@@ -178,3 +179,5 @@ This is the login page:<br>
 </tbody>
 </table><pre><code></code></pre>
 
+<h1 id="Prototype">Prototypes</h1>
+<p>Here is a prototype for the log in page <a href="https://pr.to/FT5E47/">Click Here</a></p>
