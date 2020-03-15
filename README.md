@@ -181,3 +181,4 @@ This is the login page:<br>
 
 <h1 id="Prototype">Prototypes</h1>
 <p>Here is a prototype for the log in page <a href="https://pr.to/FT5E47/">Click Here</a></p>
+<p>Here is a prototype for a bug ticket page <a href="https://pr.to/FT5E47/">Click Here</a></p>
