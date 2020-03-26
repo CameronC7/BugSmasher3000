@@ -54,7 +54,7 @@ This is the login page:<br>
 <p>Assign role.  Actor: Admin.  Given an employee has been promoted or an employee has left the company, when the admin click’s on that employee’s profile, then he is able to adjust their role in the system to give them the proper permissions so they can only see what they’re allowed to see.</p>
 </li>
 </ol>
-<h2 id="uml-use-case-diagram">UML Use Case Diagram</h2>
+<h2 id="uml-use-case-diagram">Use Case Diagram</h2>
 <p><img src="https://i.ibb.co/Ms39Sz4/UML-Diagram.jpg" alt="enter image description here"></p>
 <h2 id="system-requirements">System Requirements</h2>
 <p>1.0.0: System shall request users to log in to enter website.</p>
