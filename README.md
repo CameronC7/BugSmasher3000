@@ -12,6 +12,7 @@
 <li><a href="#Requirements-and-Use-Cases">Requirements and Use Cases</a></li>
 <li><a href="#Test-Table">Test Table</a></li>
 <li><a href="#Prototype">Prototypes</a></li>
+<li><a href="#Database-Migration">Database Migration</a></li>
 </ol>
 <h1 id="concept-description">Concept Description</h1>
 <p>This web application I am building will help keep track of bugs, or errors, in software applications.  The goal is to build this great software and then it will help me when I build more projects in the future by keeping track of all bugs that show up and reduce the time needed to fix those problems.</p>
@@ -181,3 +182,9 @@ This is the login page:<br>
 
 <h1 id="Prototype">Prototypes</h1>
 <p>Here is a prototype for the log in page and bug ticket description page <a href="https://pr.to/FT5E47/">Click Here</a></p>
+
+<h1 id="Database-Migration">Database Migration</h1>
+<p>Here is the data being shown in SSMS</p>
+<p><img src="https://i.ibb.co/209B9FG/SSMS.jpg" alt="enter image description here"></p>
+<p>And here is the employee table being displayed on the Users view</p>
+<p><img src="https://i.ibb.co/ZBgcMZw/Employee-table.jpg" alt="enter image description here"></p>
