@@ -24,7 +24,7 @@
 <h1 id="wire-frames">Wire Frames</h1>
 <p>Here are some wire frame drafts of the application.<br>
 This is the login page:<br>
-<img src="https://i.ibb.co/DbDgtQV/Login-Wireframe.png" alt="Login Wireframe"></p>
+<img src="https://i.ibb.co/z4vYchj/Login-Wireframe.png" alt="Login Wireframe"></p>
 <p>This is an example of what it will look like when looking at a bug ticket:<br>
 <img src="https://i.ibb.co/n16bRq6/Ticket-Wireframe.png" alt="Ticket Example"></p>
 <h1 id="requirements-and-use-cases">Requirements and Use Cases</h1>
