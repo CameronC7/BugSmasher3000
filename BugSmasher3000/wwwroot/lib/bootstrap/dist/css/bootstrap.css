@@ -6511,6 +6511,12 @@ a.close.disabled {
   background-color: #007bff !important;
 }
 
+.bg-buglogintest-image {
+    background: url("https://unsplash.com/photos/xoYPV4oVQJI");
+    background-position: center;
+    background-size: cover;
+}
+
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
