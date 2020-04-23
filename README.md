@@ -20,11 +20,11 @@
 <h1 id="database-diagrams">Database Diagrams</h1>
 <p>The database will be written and maintained in SQL Server and will be hosted on Microsoft Azure.</p>
 <p>Here is an ERD Diagram of the database:<br>
-<img src="https://i.ibb.co/QvgMnFx/ERD-2-0.jpg" alt="ERD Diagram"></p>
+<img src="https://i.ibb.co/4KZr929/ERD-2-0.jpg" alt="ERD Diagram"></p>
 <h1 id="wire-frames">Wire Frames</h1>
 <p>Here are some wire frame drafts of the application.<br>
 This is the login page:<br>
-<img src="https://i.ibb.co/DbDgtQV/Login-Wireframe.png" alt="Login Wireframe"></p>
+<img src="https://i.ibb.co/z4vYchj/Login-Wireframe.png" alt="Login Wireframe"></p>
 <p>This is an example of what it will look like when looking at a bug ticket:<br>
 <img src="https://i.ibb.co/n16bRq6/Ticket-Wireframe.png" alt="Ticket Example"></p>
 <h1 id="requirements-and-use-cases">Requirements and Use Cases</h1>
