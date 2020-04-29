@@ -12,11 +12,7 @@ namespace BugSmasher3000.Controllers
 {
     public class HomeController : Controller
     {
-        private IEmployee repository;
-        public HomeController(IEmployee repo)
-        {
-            repository = repo;
-        }
+        
         private readonly ILogger<HomeController> _logger;
         /*
         public HomeController(ILogger<HomeController> logger)
@@ -32,7 +28,7 @@ namespace BugSmasher3000.Controllers
         public ViewResult Users()
         {
             
-            return View(repository.Employee);
+            return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

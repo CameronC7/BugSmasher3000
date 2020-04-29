@@ -57,13 +57,4 @@
   <ItemGroup>
     <Folder Include="Properties" />
   </ItemGroup>
-  <ItemGroup>
-    <Build Include="Position.sql" />
-    <Build Include="Employee.sql" />
-    <Build Include="LoginInfo.sql" />
-    <Build Include="BugTicket.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <PostDeploy Include="Script.PostDeployment1.sql" />
-  </ItemGroup>
 </Project>
