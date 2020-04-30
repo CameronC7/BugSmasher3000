@@ -1,0 +1,38 @@
+﻿@model BugSmasher3000.ViewModels.CreateRoleViewModel
+@{
+    ViewBag.Title = "Create New Role";
+}
+
+
+
+<!-- Begin Page Content -->
+<div class="container-fluid">
+
+    <!-- Page Heading -->
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">Create New Role</h1>
+    </div>
+
+    <!-- Content Row -->
+    <!-- Create Role Form-->
+        <div class="card shadow mb-4 w-50">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold">Create New Role</h6>
+            </div>
+            <div class="card-body col-sm-6 mb-3 mb-sm-0">
+                <form method="post">
+                    <div asp-validation-summary="All" class="text-danger"></div>
+                    <div class="form-group row">
+                        <div class="col-sm-12 mb-3 mb-sm-0">
+                            <label asp-for="RoleName">Role Name</label>
+                            <input asp-for="RoleName" class="form-control" />
+                            <span asp-validation-for="RoleName" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Create Role</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Main Content -->

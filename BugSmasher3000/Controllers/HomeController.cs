@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using BugSmasher3000.Models;
 using System.Data;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BugSmasher3000.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         
@@ -20,14 +22,15 @@ namespace BugSmasher3000.Controllers
             _logger = logger;
         }
         */
+
         public ViewResult Index()
         {
             return View();
         }
+
         [HttpGet]
         public ViewResult Users()
         {
-            
             return View();
         }
 

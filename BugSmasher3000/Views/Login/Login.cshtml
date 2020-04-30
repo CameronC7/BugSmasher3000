@@ -14,6 +14,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
 
     <title>Bug Smasher 3000 - Login</title>
 
@@ -51,12 +54,12 @@
                                         <div asp-validation-summary="All" class="text-danger"></div>
                                         <div class="form-group">
                                             <label asp-for="Email">Email Address</label>
-                                            <input asp-for="Email" class="text-danger" />
+                                            <input class="form-control form-control-user" asp-for="Email" />
                                             <span asp-validation-for="Email" class="text-danger"></span>
                                         </div>
                                         <div class="form-group">
                                             <label asp-for="Password"></label>
-                                            <input asp-for="Password" class="text-danger" />
+                                            <input class="form-control form-control-user" asp-for="Password" />
                                             <span asp-validation-for="Password" class="text-danger"></span>
                                         </div>
                                         <div class="form-group">

@@ -1,0 +1,70 @@
+﻿@model IEnumerable<IdentityRole>
+
+@{
+    ViewBag.Title = "All Roles";
+}
+
+@if (Model.Any())
+{
+    <!-- Begin Page Content -->
+    <div class="container-fluid">
+
+        <!-- Page Heading -->
+        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Manage Roles</h1>
+        </div>
+
+        <!-- Add new role-->
+        <a class="btn btn-primary mb-3" style="width:auto"
+           asp-controller="Administration" asp-action="CreateRole">
+            Add new role
+        </a>
+
+
+        <!-- Create Role List-->
+        <div class="card shadow mb-4 w-50">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold">Manage Roles</h6>
+            </div>
+            <div class="card-body col-sm-6 mb-3 mb-sm-0">
+                @foreach (var role in Model)
+                {
+                <div class="row">
+                    @role.Name
+                    <a href="#" class="btn btn-info m-1">Edit</a>
+                    <a href="#" class="btn btn-danger m-1">Delete</a>
+                </div>
+                }
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <!-- Begin Page Content -->
+    <div class="container-fluid">
+    
+        <!-- Page Heading -->
+        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Manage Roles</h1>
+        </div>
+    
+        <!-- Content Row -->
+        <!-- Create Role Form-->
+        <div class="card w-50">
+            <div class="card-header">
+                No roles created yet
+            </div>
+            <div class="card-body col-sm-6 mb-3 mb-sm-0">
+                <h5 class="card-title">
+                    Use the button below to create a role
+                </h5>
+                <a class="btn btn-primary" style="width:auto"
+                   asp-controller="Administration" asp-action="CreateRole">
+                    Create Role
+                </a>
+            </div>
+        </div>
+    </div>
+}
+

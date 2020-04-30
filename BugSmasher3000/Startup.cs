@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace BugSmasher3000
 {
@@ -30,8 +31,9 @@ namespace BugSmasher3000
                 options.UseSqlServer(
                     Configuration["Data:BugSmasherData:ConnectionString"]));
             services.AddControllersWithViews();
-            services.AddIdentity<IdentityUser, IdentityRole>()
+            services.AddIdentity<ApplicationUser, IdentityRole>()
                     .AddEntityFrameworkStores<BugSmasherDataContext>();
+            services.ConfigureApplicationCookie(options => options.LoginPath = "/Login/Login");
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,6 +50,7 @@ namespace BugSmasher3000
                 app.UseHsts();
             }
             app.UseHttpsRedirection();
+
             app.UseStaticFiles();
 
             app.UseRouting();

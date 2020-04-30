@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BugSmasher3000.Models;
 using BugSmasher3000.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,11 +14,11 @@ namespace BugSmasher3000.Controllers
 {
     public class LoginController : Controller
     {
-        private readonly UserManager<IdentityUser> userManager;
-        private readonly SignInManager<IdentityUser> signInManager;
+        private readonly UserManager<ApplicationUser> userManager;
+        private readonly SignInManager<ApplicationUser> signInManager;
 
-        public LoginController(UserManager<IdentityUser> userManager,
-                               SignInManager<IdentityUser> signInManager)
+        public LoginController(UserManager<ApplicationUser> userManager,
+                               SignInManager<ApplicationUser> signInManager)
         {
             this.userManager = userManager;
             this.signInManager = signInManager;
@@ -36,18 +38,40 @@ namespace BugSmasher3000.Controllers
             return View();
         }
 
+        [AcceptVerbs("Get", "Post")]
+        [HttpPost][HttpGet]
+        public async Task<IActionResult> IsEmailInUse(string email)
+        {
+            var user = await userManager.FindByEmailAsync(email);
+
+            if(user == null)
+            {
+                return Json(true);
+            }
+            else
+            {
+                return Json($"Email {email} is already in use");
+            }
+        }
+
         [HttpPost]
         public async Task<IActionResult> Register(RegisterViewModel model)
         {
             if (ModelState.IsValid)
             {
-                var user = new IdentityUser { UserName = model.Email, Email = model.Email };
+                var user = new ApplicationUser 
+                { 
+                    UserName = model.Email, 
+                    Email = model.Email,
+                    FName = model.FName,
+                    LName = model.LName
+                };
                 var result = await userManager.CreateAsync(user, model.Password);
 
                 if (result.Succeeded)
                 {
                     await signInManager.SignInAsync(user, isPersistent: false);
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Login", "Login");
                 }
 
                 foreach (var error in result.Errors)
@@ -77,7 +101,6 @@ namespace BugSmasher3000.Controllers
                     return RedirectToAction("Index", "Home");
                 }
 
-                
                 ModelState.AddModelError(string.Empty, "Invalid Login Attempt");
                 
             }

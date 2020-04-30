@@ -1,4 +1,4 @@
-﻿@inject SignInManager<IdentityUser> signInManager;
+﻿@inject SignInManager<ApplicationUser> signInManager;
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,6 +10,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+
 
     <title>@ViewData["Title"] - BugSmasher3000</title>
 
@@ -19,6 +23,7 @@
 
     <!-- Custom styles for this template-->
     <link href="~/Content/css/sb-admin-2.min.css" rel="stylesheet">
+
 
 </head>
 
@@ -43,7 +48,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" asp-action="Index">
+                <a class="nav-link" asp-action="Index" asp-controller="Home">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span>
                 </a>
@@ -51,9 +56,25 @@
 
             <!-- Nav Item - Manage Users -->
             <li class="nav-item">
-                <a class="nav-link" asp-action="Users">
-                    <i class="fas fa-fw fa-portrait"></i>
+                <a class="nav-link" asp-action="Users" asp-controller="Home">
+                    <i class="fas fa-fw fa-users-cog"></i>
                     <span>Manage Users</span>
+                </a>
+            </li>
+
+            <!-- Nav Item - Create New Role -->
+            <li class="nav-item">
+                <a class="nav-link" asp-action="CreateRole" asp-controller="Administration">
+                    <i class="fas fa-fw fa-user-plus"></i>
+                    <span>Create New Role</span>
+                </a>
+            </li>
+
+            <!-- Nav Item - Manage Roles -->
+            <li class="nav-item">
+                <a class="nav-link" asp-action="ListRoles" asp-controller="Administration">
+                    <i class="fas fa-fw fa-cogs"></i>
+                    <span>Manage Roles</span>
                 </a>
             </li>
 
@@ -102,7 +123,7 @@
                         <div class="input-group">
                             <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
                             <div class="input-group-append">
-                                <button class="btn btn-info" type="button">
+                                <button class="btn btn-primary" type="button">
                                     <i class="fas fa-search fa-sm"></i>
                                 </button>
                             </div>

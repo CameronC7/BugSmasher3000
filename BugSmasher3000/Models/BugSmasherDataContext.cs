@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace BugSmasher3000.Models
 {
-    public partial class BugSmasherDataContext : IdentityDbContext
+    public partial class BugSmasherDataContext : IdentityDbContext<ApplicationUser>
     {
         public BugSmasherDataContext()
         {
