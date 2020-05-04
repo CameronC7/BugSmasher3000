@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Not Found";
+}
+
+<!-- Begin Page Content -->
+<div class="container-fluid">
+
+    <!-- Page Heading -->
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">@ViewBag.ErrorMessage</h1>
+    </div>
+
+    <!-- Content Row -->
+    <!-- Create Role Form-->
+    <div class="card w-50">
+        <div class="card-body col-sm-6 mb-3 mb-sm-0">
+            <h5 class="card-title">
+                Click here to navigate to the home page
+            </h5>
+            <a class="btn btn-primary" style="width:auto"
+               asp-action="Index" asp-controller="Home">
+                Return Home
+            </a>
+        </div>
+    </div>
+</div>
