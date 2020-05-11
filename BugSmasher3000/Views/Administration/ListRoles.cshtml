@@ -31,14 +31,14 @@
                 @foreach (var role in Model)
                 {
                     <tr>
-                        <td class="text-center">
+                        <td class="text-center align-middle">
                             @role.Name
                         </td>
-                        <td class="text-center">
-                            <a class="btn btn-primary m-1 mb-3" 
+                        <td class="text-center align-middle">
+                            <a class="btn btn-primary align-middle" 
                                     asp-action="EditRole" asp-controller="Administration"
                                     asp-route-id="@role.Id">Edit</a>
-                            <button href="#" class="btn btn-danger m-1 mb-3">Delete</button>
+                            <button href="#" class="btn btn-danger align-middle">Delete</button>
                         </td>
                     </tr>
                 }
@@ -63,7 +63,7 @@ else
             <div class="card-header">
                 No roles created yet
             </div>
-            <div class="card-body col-sm-6 mb-3 mb-sm-0">
+            <div class="card-body col-sm-8 mb-3 mb-sm-0">
                 <h5 class="card-title">
                     Use the button below to create a role
                 </h5>

@@ -1,0 +1,11 @@
+﻿@import "../vendor/bootstrap/scss/_functions.scss";
+@import "../vendor/bootstrap/scss/_variables.scss";
+
+
+.bg-test-image {
+    background: url("https://unsplash.com/photos/xoYPV4oVQJI");
+    background-position: center;
+    background-size: cover;
+}
+
+@import "../vendor/bootstrap/scss/bootstrap.scss";

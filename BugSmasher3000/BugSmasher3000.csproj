@@ -7,6 +7,12 @@
   <ItemGroup>
     <Compile Remove="Migrations\20200430030844_Extend_IdentityUser.cs" />
     <Compile Remove="Migrations\20200430030844_Extend_IdentityUser.Designer.cs" />
+    <Compile Remove="Migrations\20200505173028_Rebuild.cs" />
+    <Compile Remove="Migrations\20200505173028_Rebuild.Designer.cs" />
+    <Compile Remove="Migrations\20200505173445_Rebuild.cs" />
+    <Compile Remove="Migrations\20200505173445_Rebuild.Designer.cs" />
+    <Compile Remove="Migrations\20200505173652_Rebuild.cs" />
+    <Compile Remove="Migrations\20200505173652_Rebuild.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -1773,6 +1779,7 @@
 
   <ItemGroup>
     <Folder Include="Infrastructure\" />
+    <Folder Include="wwwroot\NewFolder\" />
   </ItemGroup>
 
 

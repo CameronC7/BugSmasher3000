@@ -11,6 +11,8 @@ namespace BugSmasher3000.ViewModels
         public EditRoleViewModel()
         {
             Users = new List<string>();
+            FName = new List<string>();
+            LName = new List<string>();
         }
         public string Id { get; set; }
 
@@ -18,5 +20,9 @@ namespace BugSmasher3000.ViewModels
         public string RoleName { get; set; }
 
         public List<string> Users { get; set; }
+
+        public List<string> FName { get; set; }
+
+        public List<string> LName { get; set; }
     }
 }

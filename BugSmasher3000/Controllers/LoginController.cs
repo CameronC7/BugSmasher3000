@@ -107,6 +107,13 @@ namespace BugSmasher3000.Controllers
             return View(model);
         }
 
+        [HttpGet]
+        [AllowAnonymous]
+        public IActionResult AccessDenied()
+        {
+            return View();
+        }
+
         public IActionResult Forgot()
         {
             return View();

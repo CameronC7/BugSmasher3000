@@ -55,26 +55,32 @@
             </li>
 
             <!-- Nav Item - Manage Users -->
-            <li class="nav-item">
-                <a class="nav-link" asp-action="Users" asp-controller="Home">
-                    <i class="fas fa-fw fa-users-cog"></i>
-                    <span>Manage Users</span>
-                </a>
-            </li>
-            
+            @if (signInManager.IsSignedIn(User) && User.IsInRole("Admin"))
+            {
+                <li class="nav-item">
+                    <a class="nav-link" asp-action="Users" asp-controller="Home">
+                        <i class="fas fa-fw fa-users-cog"></i>
+                        <span>Manage Users</span>
+                    </a>
+                </li>
+            }
+
             <!-- Nav Item - Manage roles -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-cogs"></i>
-                    <span>Manage Roles</span>
-                </a>
-                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" asp-action="CreateRole" asp-controller="Administration">Create New Role</a>
-                        <a class="collapse-item" asp-action="ListRoles" asp-controller="Administration">Manage Roles</a>
+            @if (signInManager.IsSignedIn(User) && User.IsInRole("Admin"))
+            {
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+                        <i class="fas fa-fw fa-cogs"></i>
+                        <span>Manage Roles</span>
+                    </a>
+                    <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+                        <div class="bg-white py-2 collapse-inner rounded">
+                            <a class="collapse-item" asp-action="CreateRole" asp-controller="Administration">Create New Role</a>
+                            <a class="collapse-item" asp-action="ListRoles" asp-controller="Administration">Manage Roles</a>
+                        </div>
                     </div>
-                </div>
-            </li>
+                </li>
+            }
 
             <!-- Nav Item - My Projects -->
             <li class="nav-item">

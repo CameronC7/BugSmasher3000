@@ -33,7 +33,11 @@ namespace BugSmasher3000
             services.AddControllersWithViews();
             services.AddIdentity<ApplicationUser, IdentityRole>()
                     .AddEntityFrameworkStores<BugSmasherDataContext>();
-            services.ConfigureApplicationCookie(options => options.LoginPath = "/Login/Login");
+            services.ConfigureApplicationCookie(options =>
+            {
+                options.LoginPath = "/Login/Login";
+                options.AccessDeniedPath = "/Login/AccessDenied";
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
