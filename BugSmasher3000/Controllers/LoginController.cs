@@ -70,6 +70,11 @@ namespace BugSmasher3000.Controllers
 
                 if (result.Succeeded)
                 {
+                    if (signInManager.IsSignedIn(User) && User.IsInRole("Admin"))
+                    {
+                        return RedirectToAction("Users", "Administration");
+                    }
+
                     await signInManager.SignInAsync(user, isPersistent: false);
                     return RedirectToAction("Login", "Login");
                 }

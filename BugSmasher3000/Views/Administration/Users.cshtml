@@ -1,0 +1,71 @@
+﻿@model IEnumerable<ApplicationUser>
+
+@{
+    ViewBag.Title = "Users";
+}
+
+
+
+<!-- Begin Page Content -->
+    <div class="container-fluid">
+
+        <!-- Page Heading -->
+        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Manage Users</h1>
+        </div>
+
+        <!-- Add User Button-->
+        <div class="row">
+            <a asp-action="Register" asp-controller="Login"
+               class="btn btn-primary ml-3 mb-3" style="width: auto">
+                Add New User
+            </a>
+        </div>
+
+        <!-- Content Row -->
+        <!-- Users Table-->
+        @if (Model.Any())
+        {
+            foreach (var user in Model)
+            {
+                <div class="card shadow mb-4 w-50">
+                    <div class="card-header py-3 bg-gray-500">
+                        <h6 class="m-0 font-weight-bold text-white">User Id: @user.Id</h6>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">@user.FName @user.LName</h5>
+                    </div>
+                    <div class="card-footer">
+                        <form asp-action="DeleteUser" asp-route-id="@user.Id" method="post">
+                            <a asp-action="EditUser" asp-controller="Administration"
+                               asp-route-id="@user.Id" class="btn btn-primary">Edit</a>
+                            <button type="submit" class="btn btn-danger"
+                                    onclick="return confirm('Are you sure you want to delete user : @user.FName @user.LName')">
+                                Delete
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            }
+
+        }
+        else
+        {
+            <div class="card shadow mb-4">
+                <div class="card-header py-3 bg-gray-500">
+                    <h6 class="m-0 font-weight-bold text-white">No Users Created Yet</h6>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">
+                        Use the button below to create a user
+                    </h5>
+                    <a class="btn btn-primary" style="width: auto"
+                       asp-controller="Login" asp-action="Register">
+                        Add New User
+                    </a>
+                </div>
+            </div>
+        }
+
+    </div>
+<!-- End of Main Content -->
