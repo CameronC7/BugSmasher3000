@@ -20,11 +20,12 @@
 <h1 id="concept-description">Concept Description</h1>
 <p>This web application I am building will help keep track of bugs, or errors, in software applications.  The goal is to build this great software and then it will help me when I build more projects in the future by keeping track of all bugs that show up and reduce the time needed to fix those problems.</p>
 <p>My application will have a theoretical company using this application, including fake employee names with different account permissions, depending on the title of the employee.  The employees will need to log-in to use the application.  “Users” of this company’s product will also be able to submit bugs they found while using the product. The user’s report will be screened and if the problem is valid, will be added to the bug tracking application.</p>
-<h1 id="techUsed">Technologies Used</h1><h1>
-</h1><ul>
+<h1 id="techUsed">Technologies Used</h1>
+<ul>
 <li>C#</li>
 <li>SQL Server</li>
-<li><a href="http://ASP.NET">ASP.NET</a> MVC Core</li>
+<li>ASP.NET MVC Core</li>
+<li>Visual Studio</li>
 <li>Bootstrap</li>
 <li>HTML/CSS</li>
 <li>API’s (SendGrid and Google/Facebook Logins)</li>
