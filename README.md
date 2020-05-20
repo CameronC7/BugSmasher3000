@@ -3,6 +3,8 @@
 
 ---
 
+<hr>
+<hr>
 <h1 id="bug-smasher-3000">Bug Smasher 3000</h1>
 <h2 id="table-of-contents">Table of Contents</h2>
 <ol>
@@ -18,15 +20,15 @@
 <h1 id="concept-description">Concept Description</h1>
 <p>This web application I am building will help keep track of bugs, or errors, in software applications.  The goal is to build this great software and then it will help me when I build more projects in the future by keeping track of all bugs that show up and reduce the time needed to fix those problems.</p>
 <p>My application will have a theoretical company using this application, including fake employee names with different account permissions, depending on the title of the employee.  The employees will need to log-in to use the application.  “Users” of this company’s product will also be able to submit bugs they found while using the product. The user’s report will be screened and if the problem is valid, will be added to the bug tracking application.</p>
-<h1 id="techUsed">Technologies Used<h1>
-  <p>
-    * C#
-    * SQL Server
-    * ASP.NET MVC Core
-    * Bootstrap
-    * HTML/CSS
-    * API's (SendGrid and Google/Facebook Logins)
-  </p>
+<h1 id="techUsed">Technologies Used</h1><h1>
+</h1><ul>
+<li>C#</li>
+<li>SQL Server</li>
+<li><a href="http://ASP.NET">ASP.NET</a> MVC Core</li>
+<li>Bootstrap</li>
+<li>HTML/CSS</li>
+<li>API’s (SendGrid and Google/Facebook Logins)</li>
+</ul>
 <h1 id="database-diagrams">Database Diagrams</h1>
 <p>The database will be written and maintained in SQL Server and will be hosted on Microsoft Azure.</p>
 <p>Here is an ERD Diagram of the database:<br>
@@ -98,7 +100,6 @@ This is the login page:<br>
 </li>
 </ul>
 <h1 id="test-table">Test Table</h1>
-
 <table>
 <thead>
 <tr>
@@ -189,12 +190,11 @@ This is the login page:<br>
 </tr>
 </tbody>
 </table><pre><code></code></pre>
-
 <h1 id="Prototype">Prototypes</h1>
 <p>Here is a prototype for the log in page and bug ticket description page <a href="https://pr.to/FT5E47/">Click Here</a></p>
-
 <h1 id="Database-Migration">Database Migration</h1>
 <p>Here is the data being shown in SSMS</p>
 <p><img src="https://i.ibb.co/209B9FG/SSMS.jpg" alt="enter image description here"></p>
 <p>And here is the employee table being displayed on the Users view</p>
 <p><img src="https://i.ibb.co/ZBgcMZw/Employee-table.jpg" alt="enter image description here"></p>
+
