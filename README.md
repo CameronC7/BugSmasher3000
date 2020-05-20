@@ -1,10 +1,3 @@
----
-
-
----
-
-<hr>
-<hr>
 <h1 id="bug-smasher-3000">Bug Smasher 3000</h1>
 <h2 id="table-of-contents">Table of Contents</h2>
 <ol>
