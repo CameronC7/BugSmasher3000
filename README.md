@@ -7,6 +7,7 @@
 <h2 id="table-of-contents">Table of Contents</h2>
 <ol>
 <li><a href="#Concept-Description">Concept Description</a></li>
+<li><a href="#techUsed">Technologies Used</a></li>
 <li><a href="#Database-Diagrams">Database Diagrams</a></li>
 <li><a href="#Wire-Frames">Wire Frames</a></li>
 <li><a href="#Requirements-and-Use-Cases">Requirements and Use Cases</a></li>
@@ -17,6 +18,15 @@
 <h1 id="concept-description">Concept Description</h1>
 <p>This web application I am building will help keep track of bugs, or errors, in software applications.  The goal is to build this great software and then it will help me when I build more projects in the future by keeping track of all bugs that show up and reduce the time needed to fix those problems.</p>
 <p>My application will have a theoretical company using this application, including fake employee names with different account permissions, depending on the title of the employee.  The employees will need to log-in to use the application.  “Users” of this company’s product will also be able to submit bugs they found while using the product. The user’s report will be screened and if the problem is valid, will be added to the bug tracking application.</p>
+<h1 id="techUsed">Technologies Used<h1>
+  <p>
+    * C#
+    * SQL Server
+    * ASP.NET MVC Core
+    * Bootstrap
+    * HTML/CSS
+    * API's (SendGrid and Google/Facebook Logins)
+  </p>
 <h1 id="database-diagrams">Database Diagrams</h1>
 <p>The database will be written and maintained in SQL Server and will be hosted on Microsoft Azure.</p>
 <p>Here is an ERD Diagram of the database:<br>
